@@ -4,8 +4,6 @@ node_js:
 deploy:
   provider: npm
   email: jonathan.glanz@gmail.com
-  api_key:
-    secure: q0YZXYFx+/tvfbRRU4Mg2EZGwZM3hzwRc6RjRZaw6NLTtgH5/b0Oys8fVvmJWFcThlOwFDzpVelVOkY+5zhWm0B3mIdtiO6Qw6M4IcfbftgYCn4dWnK0wmIZXzs8fEvWQYBkDlqt/XktTHl5Wg1IwAroBf6ctvt+pIjxTGOsld4AMZnw7GghQgRLMngiRwRW6Zqqsx8gDVXlnPuKDg82ryAhyjlO13gKcT6z7R1w9S9fmoHlzLTJ31ob47ePxOqm7ZQe52Wt3zm2LoCQyntyCABCvnGkLz7bmpSN6HE1G1ABcAN/hz4UMvrjn9KFHZdAXQPCA7rylJvVxRUZtdb98koBoJ7H/gQ1mTfQSpczVqbX1I4vneKDF8OYWtHIHwUXLbTq8z2BL+GUz5yCg1TAo5W8REQVC4oR735yBcjytsz7yXqVEtjO790gas/hfjv6tA94EktmUherrdeKf6Y2QLuD+LRAjA+3BezwYeMiq/up4Sa/P9CVnjsCxjWTaYr8ssdXPo8pwEXzP5tt2/0RluBzyE/5T341oGdc729IUDwkZfYXdZj+16uVA4wPs81J4d+R85VlEogj1lOjWwzxGVDyrU6/HvuZ1h23w8Ux9nK14Pl4X6i4rBPzf5fvocTB+6/geUnY9jYhA6NZzsQIM8Z0gmIOue9xO4PV8ssei7U=
   on:
     branch: master
     tags: true
