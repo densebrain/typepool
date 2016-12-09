@@ -55,5 +55,6 @@
     "lodash": "^4.17.2",
     "typeguard": "0.0.7",
     "typelogger": "^1.0.25"
-  }
+  },
+  "version": "1.0.0"
 }
