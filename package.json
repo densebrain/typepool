@@ -1,0 +1,59 @@
+{
+  "name": "typepool",
+  "typings": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "build-watch": "tsc --project tsconfig.json --watch",
+    "test": "jest",
+    "release": "git commit -a -m \"publishing\" && git push && npm version patch && npm publish && git push --all && git push --tags"
+  },
+  "jest": {
+    "verbose": true,
+    "globals": {
+      "__TS_CONFIG__": {
+        "target": "es5",
+        "module": "commonjs",
+        "jsx": "react"
+      }
+    },
+    "moduleDirectories": [
+      "./node_modules",
+      "./src"
+    ],
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "src\\/test.*\\.spec\\.(ts|tsx)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.0.36",
+    "@types/jest": "^16.0.1",
+    "@types/lodash": "^4.14.43",
+    "@types/node": "0.0.2",
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.12.0",
+    "gulp": "^3.9.1",
+    "jest": "^17.0.3",
+    "ts-jest": "^17.0.3",
+    "tslint": "^4.0.2",
+    "typescript": "^2.1.0-dev.20161015"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "immutable": "^3.8.1",
+    "lodash": "^4.17.2",
+    "typeguard": "0.0.7",
+    "typelogger": "^1.0.25"
+  }
+}
