@@ -14,7 +14,6 @@
     "prepublish": "npm run clean && npm run build",
     "test": "jest --no-cache",
     "release": "git commit -a -m \"publishing\" && git push && npm version patch && git push --tags"
-    
   },
   "jest": {
     "verbose": true,
@@ -52,5 +51,5 @@
     "typeguard": "0.0.7",
     "typelogger": "^1.0.25"
   },
-  "version": "1.0.6"
+  "version": "1.0.7"
 }
