@@ -11,17 +11,11 @@
     "build": "tsc --project tsconfig.json",
     "build-watch": "tsc --project tsconfig.json --watch",
     "test": "jest --no-cache",
-    "release": "git commit -a -m \"publishing\" && git push && npm version patch && npm publish && git push --all && git push --tags"
+    "release": "git commit -a -m \"publishing\" && git push && npm version patch && git push --tags"
+    
   },
   "jest": {
     "verbose": true,
-    "globals": {
-      "__TS_CONFIG__": {
-        "target": "es5",
-        "module": "commonjs",
-        "jsx": "react"
-      }
-    },
     "moduleDirectories": [
       "./node_modules",
       "./src"
