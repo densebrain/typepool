@@ -12,11 +12,11 @@ declare global {
 		onCancel(cancelCallback:(CancelablePromiseResolver) => any):void
 	}
 	
-	class Bluebird {
-		static setImmediate():Promise<void>
-		static defer():CancelablePromiseResolver<any>
-		static defer<T>():CancelablePromiseResolver<T>
-	}
+	// interface Bluebird<T> {
+	// 	static setImmediate():Bluebird<void>
+	// 	static defer():CancelablePromiseResolver<any>
+	// 	static defer<T>():CancelablePromiseResolver<T>
+	// }
 	
 }
 
@@ -74,8 +74,7 @@ Object.assign(Bluebird as any, {
 
 
 
-export {
-	Bluebird
-}
+
+
 
 export default Bluebird

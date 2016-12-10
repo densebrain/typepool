@@ -42,7 +42,7 @@
     "jest": "^17.0.3",
     "ts-jest": "^17.0.3",
     "tslint": "^4.0.2",
-    "typescript": "^2.1.0-dev.20161015"
+    "typescript": "^2.2.0-dev.20161210"
   },
   "dependencies": {
     "bluebird": "^3.4.6",
