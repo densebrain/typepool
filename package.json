@@ -9,7 +9,9 @@
   ],
   "scripts": {
     "build": "tsc --project tsconfig.json",
-    "build-watch": "tsc --project tsconfig.json --watch",
+    "build:watch": "tsc --project tsconfig.json --watch",
+    "clean": "rm -Rf dist",
+    "prepublish": "npm run clean && npm run build",
     "test": "jest --no-cache",
     "release": "git commit -a -m \"publishing\" && git push && npm version patch && git push --tags"
     
