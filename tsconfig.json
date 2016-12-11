@@ -20,7 +20,7 @@
     "sourceMap": true,
     "pretty": true,
     "outDir": "./dist",
-    "baseUrl": "./src",
+    "rootDirs": ["./src"],
     
     "typeRoots": [
       "./node_modules/@types"

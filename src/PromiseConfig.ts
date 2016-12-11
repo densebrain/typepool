@@ -11,13 +11,6 @@ declare global {
 		cancel():void
 		onCancel(cancelCallback:(CancelablePromiseResolver) => any):void
 	}
-	
-	// interface Bluebird<T> {
-	// 	static setImmediate():Bluebird<void>
-	// 	static defer():CancelablePromiseResolver<any>
-	// 	static defer<T>():CancelablePromiseResolver<T>
-	// }
-	
 }
 
 /**
