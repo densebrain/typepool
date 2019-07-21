@@ -13,7 +13,7 @@
     "clean": "rm -Rf dist",
     "prepublish": "npm run clean && npm run build",
     "test": "jest --no-cache",
-    "release": "yarn version patch && git push --tags"
+    "release": "npm version patch && git push --tags"
   },
   "jest": {
     "verbose": true,
