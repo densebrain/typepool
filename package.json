@@ -50,5 +50,5 @@
     "bluebird": "^3.5.5",
     "typeguard": "^0.0.16"
   },
-  "version": "1.0.9"
+  "version": "1.0.10"
 }
